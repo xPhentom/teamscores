@@ -30,6 +30,32 @@ homeApp.controller('mainCtrl', ['$scope', '$log', function($scope, $log) {
 homeApp.controller('docentCtrl', ['$scope', '$log', function($scope, $log) {
 
 }]);
-homeApp.controller('studentCtrl', ['$scope', '$log', function($scope, $log) {
+
+
+homeApp.controller('studentCtrl', ['$scope', '$http', function($scope, $http) {
+
+    $scope.name = "test";
+
+    $scope.student = {
+        mail: '',
+        paswoord: '',
+    };
+
+   $scope.login = function(){
+
+       $http({
+           method: "POST",
+           url: "/student",
+           data: {
+               mail: $scope.student.mail,
+               paswoord: $scope.student.paswoord
+            }
+       });
+
+       console.log("test " + $scope.student.mail)
+   };
 
 }]);
+
+
+

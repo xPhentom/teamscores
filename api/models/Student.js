@@ -15,6 +15,14 @@ module.exports = {
 
     achternaam: {
       type: 'string'
+    },
+
+    mail:{
+      type: 'string'
+    },
+
+    paswoord:{
+      type: 'string'
     }
 
   }

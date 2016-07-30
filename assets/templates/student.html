@@ -9,19 +9,21 @@
 <div class="column is-4 is-offset-4">
 <h1 class="title">Login als student</h1><br>
   <p class="control has-icon">
-    <input class="input" type="email" placeholder="Email">
+    <input class="input" type="mail" placeholder="Email" ng-model="student.mail">
     <i class="fa fa-envelope"></i>
   </p>
   <p class="control has-icon">
-    <input class="input" type="password" placeholder="Password">
+    <input class="input" type="password" placeholder="Password" ng-model="student.paswoord">
     <i class="fa fa-lock"></i>
   </p>
   <p class="control">
-    <button class="button is-success">
+    <button class="button is-success" ng-click="login()">
     Login
   </button>
   </p>
 </div>
+
+
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
