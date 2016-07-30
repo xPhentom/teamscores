@@ -30,8 +30,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/TeamScores.git"
+    "url": "https://github.com/xPhentom/teamscores.git"
   },
-  "author": "anonymous node/sails user",
+  "author": "Wouter Roozeleer",
   "license": ""
 }
