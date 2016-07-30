@@ -1,45 +1,29 @@
 <!-- Default home page -->
+<html ng-app="homeApp">
 <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+
 <nav class="nav has-shadow">
   <div class="container">
     <div class="nav-left">
-      <a class="nav-item is-tab is-active" >Home</a>
-      <a class="nav-item is-tab" href="http://localhost:1337/student">Student</a>
-      <a class="nav-item is-tab" href="http://localhost:1337/docent">Docent</a>
+      <a id="home" class="nav-item is-tab" href="#">Home</a>
+      <a id="student" class="nav-item is-tab" href="#/student">Student</a>
+      <a id="docent" class="nav-item is-tab" href="#/docent">Docent</a>
     </div>
   </div>
 </nav>
 
 <!-- Start site -->
 
-  <div class="column is-offset-4">
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical is-6">
-        <div class="tile">
-          <div class="tile is-parent">
-            <article class="tile is-child notification is-info">
-              <p class="title">Welkom bij TeamScores</p>
-              <p class="subtitle">Introductie</p>
-              <p class="text">
-              TeamScores is gemaakt om zowel studenten als docenten te helpen bij teamwork.
-              Al jaren lang hebben studenten het moeilijk om elkaar eerlijk te beoordelen en beoordeelt te worden. Docenten hebben het dan weer moeilijk met te zien wanneer ze moeten inspringen.
-              <br>
-              </p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div ng-view></div>
 
+</div>
+</div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+<script src="script.js"></script>
 
-
-
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-<script type="text/javascript" src="assets/script.js"></script>
+</html>
