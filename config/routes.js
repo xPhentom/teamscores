@@ -34,6 +34,14 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+
+  '/student':{
+    view: 'student'
+  },
+
+  '/docent':{
+    view: 'docent'
   }
 
   /***************************************************************************
